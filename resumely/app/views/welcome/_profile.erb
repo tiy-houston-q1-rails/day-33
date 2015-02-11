@@ -1,0 +1,32 @@
+
+<dl>
+  <dt>First Name</dt>
+  <dd><%= @current_user.first_name %></dd>
+
+  <dt>Last Name</dt>
+  <dd><%= @current_user.last_name %></dd>
+
+  <dt>Title</dt>
+  <dd><%= @current_user.title %></dd>
+
+  <dt>Email</dt>
+  <dd><%= @current_user.email %></dd>
+
+  <dt>Bio</dt>
+  <dd><%= simple_format @current_user.bio %></dd>
+
+  <dt>Twitter</dt>
+  <dd><%= link_to @current_user.twitter, "https://twitter.com/#{@current_user.twitter}" %></dd>
+
+  <dt>The Facebook</dt>
+  <dd><%= link_to @current_user.facebook, "https://facebook.com/#{@current_user.facebook}" %></dd>
+
+  <h2>Last Position</h2>
+
+  <dt>Title</dt>
+  <dd><%= @current_user.last_job_title %></dd>
+
+  <dt>Description</dt>
+  <dd><%= simple_format @current_user.last_job_description %></dd>
+
+</dl>

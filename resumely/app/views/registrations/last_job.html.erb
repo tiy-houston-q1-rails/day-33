@@ -1,0 +1,15 @@
+<% @user.errors.full_messages.each do |message| %>
+  Fix your shit: <%=message %><br/>
+<% end %>
+
+<%= simple_form_for @user, url: wizard_path, method: :put do |f| %>
+  <%=  f.input :last_job_title  %>
+  <%=  f.input :last_job_description  %>
+
+  <%= f.submit "Save and Complete", class: "btn btn-primary" %>
+<% end %>
+
+<hr/>
+<%= link_to 'back', previous_wizard_path %>
+
+<%= tutorial_progress_bar %>

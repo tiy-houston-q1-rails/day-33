@@ -1,0 +1,19 @@
+@import 'bootstrap';
+
+
+dt {
+  float: left;
+  width: 15em;
+}
+
+.navigator {
+  li.current {
+    font-weight: bold;
+  }
+  li.finished a{
+    color: #2ECC71;
+  }
+  li.unfinished a{
+    color: #95A5A6;
+  }
+}
